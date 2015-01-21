@@ -12,7 +12,7 @@ title: Languages
                 <li class="item">
                     <span class="title"><strong>German:</strong></span>
                     <span class="level">Native Speaker <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
-                </li><!--//item-->
+                </li>
                 <li class="item">
                     <span class="title"><strong>English:</strong></span>
                     <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></span>
