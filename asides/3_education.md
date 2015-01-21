@@ -1,0 +1,21 @@
+---
+layout: section
+type: secondarysection
+title: Education
+---
+
+<aside class="education aside section">
+    <div class="section-inner">
+        <h2 class="heading">Education</h2>
+        <div class="content">
+            <div class="item">                      
+                <h3 class="title"><i class="fa fa-graduation-cap"></i> MSc Computervisualistik</h3>
+                <h4 class="university">University of Koblenz <span class="year">(2011-2014)</span></h4>
+            </div>
+            <div class="item">
+                <h3 class="title"><i class="fa fa-graduation-cap"></i> BSc Computervisualistik</h3>
+                <h4 class="university">University of Koblenz <span class="year">(2007-2011)</span></h4>
+            </div>
+        </div>
+    </div>
+</aside>

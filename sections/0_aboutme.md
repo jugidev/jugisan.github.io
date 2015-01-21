@@ -1,0 +1,15 @@
+---
+layout: section
+type: primarysection
+title: About Me
+---
+
+<section class="about section">
+    <div class="section-inner">
+        <h2 class="heading">About Me</h2>
+        <div class="content">
+            <p>I'm a young and motivated Software Developer and have gained experience mainly in C++. My work-related interests are in GUI, Games and Gamedevelopment, but I also like Graphicsprogramming and Imageprocessing.</p>  
+             <p>I live with my family in a lovely town in Germany. In my spare time, I love to do sports and listen to music. I especially like to play computer games and meet with my friends to play <a hreft="http://en.wikipedia.org/wiki/Munchkin_(card_game)">Munchkin</a> or other board games. </p>
+        </div>
+    </div>              
+</section>

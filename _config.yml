@@ -1,5 +1,24 @@
+timezone: Europe/Berlin
+highlighter: pygments
+markdown: redcarpet
+paginate: 15
+
+# Permalinks
+permalink: pretty
+relative_permalinks: true
+
 exclude: [README.md, LICENSE, node_modules, npm-debug.log, Gulpfile.js, package.json]
 
 # comment
 author:
     name: Julian Giesen
+
+# setup
+title: juliangiesen.de
+url: http://juliangiesen.de
+description: Portfolio website of Julian Giesen	
+copyright: 2014&mdash;2015
+baseurl: /
+
+github:
+  repo: https://github.com/dmies/dmies.github.io
