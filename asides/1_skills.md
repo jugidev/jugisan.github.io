@@ -14,6 +14,13 @@ title: Skills
 		            </div>                                      
 		        </div>                                
 		    </div>
+		    <div class="item">
+		        <h3 class="level-title">C#<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I have worked with this language or technologie and I am comfortable with it.">Working Knowledge</span></h3>
+		        <div class="level-bar">
+		            <div class="level-bar-inner" data-level="55%">
+		            </div>                                      
+		        </div>                                
+		    </div>
 		</div>
 	</div>
 </aside>
