@@ -17,7 +17,14 @@ title: Skills
 		    <div class="item">
 		        <h3 class="level-title">C#<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I have worked with this language or technologie and I am comfortable with it.">Working Knowledge</span></h3>
 		        <div class="level-bar">
-		            <div class="level-bar-inner" data-level="55%">
+		            <div class="level-bar-inner" data-level="60%">
+		            </div>                                      
+		        </div>                                
+		    </div>
+		    <div class="item">
+		        <h3 class="level-title">Java<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I have played with this language or technologie and I have a basic understanding of its purpose.">Basic Knowledge</span></h3>
+		        <div class="level-bar">
+		            <div class="level-bar-inner" data-level="60%">
 		            </div>                                      
 		        </div>                                
 		    </div>

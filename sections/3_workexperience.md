@@ -14,7 +14,8 @@ title: Work Experience
 	        </div>
 	        <div class="item">
 	            <h3 class="title">Research Assistant - <span class="place"><a href="http://www.uni-koblenz-landau.de/de/koblenz/fb4/icv/agpaulus">AGAS - University of Koblenz</a></span> <span class="year">(2012 - 2013)</span></h3>
-	            <p>Projectplanning and GUI-Programming - C++, OpenGL, wxWidgets</p>
+	            <p><i>Skills used:</i> C++, OpenGL, wxWidgets, svn</p>
+	            <p><i>Role Overview:</i> Projectplanning and GUI-Programming</p> <!-- todo: formulate more -->
 	        </div>
 	    </div>  
 	</div>                

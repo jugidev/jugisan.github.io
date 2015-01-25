@@ -17,6 +17,10 @@ title: Languages
                     <span class="title"><strong>English:</strong></span>
                     <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></span>
                 </li>
+                <li class="item">
+                    <span class="title"><strong>Japanese:</strong></span>
+                    <span class="level">Elementary Proficiency <br class="visible-sm visible-xs"/><i class="fa fa-star"></i> </i></span>
+                </li>
             </ul>
         </div>
     </div>
