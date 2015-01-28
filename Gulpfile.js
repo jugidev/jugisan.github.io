@@ -10,21 +10,25 @@ var uglify = require('gulp-uglify');
 var minifyCss = require('gulp-minify-css');
 
 var paths = {
-    styles: [
-        './_resources/styles/rikushan.less'
-    ],
-    statics: [
-        './_resources/statics/**/*'
-    ],
-    build: './res'
+  styles: [
+    './_resources/styles/rikushan.less'
+  ],
+  statics: [
+    './_resources/statics/**/*'
+  ],
+  build: './res'
 };
 
 gulp.task('styles', function() {
-    return gulp.src(paths.styles)
-        .pipe(less())
-        .pipe(minifyCss({keepSpecialComments: 0}))
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest(paths.build));
+  return gulp.src(paths.styles)
+    .pipe(less())
+    .pipe(minifyCss({
+      keepSpecialComments: 0
+    }))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest(paths.build));
 });
 
 gulp.task('default', ['styles']);

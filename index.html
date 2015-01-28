@@ -3,20 +3,20 @@ layout: default
 ---
 
 <div class="container sections-wrapper">
-    <div class="row">
-        <div class="primary col-md-8 col-sm-12 col-xs-12">
-    		{% for section in site.pages %}
-    			{% if section.type == 'primarysection' %}
-					{{ section.content }}
-				{% endif %}
-			{% endfor %}
-        </div> <!--//primary-->  
-        <div class="secondary col-md-4 col-sm-12 col-xs-12"> 
-    		{% for aside in site.pages %}
-    			{% if aside.type == 'secondarysection' %}
-					{{ aside.content }}
-				{% endif %}
-			{% endfor %}
-        </div> 
+  <div class="row">
+    <div class="primary col-md-8 col-sm-12 col-xs-12">
+      {% for section in site.pages %}
+        {% if section.type == 'primarysection' %}
+          {{ section.content }}
+        {% endif %}
+      {% endfor %}
     </div>
+    <div class="secondary col-md-4 col-sm-12 col-xs-12">
+      {% for aside in site.pages %}
+        {% if aside.type == 'secondarysection' %}
+          {{ aside.content }}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
 </div>
