@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+{% include head.html %}
+
+<body>
+
+<div class="site">
+
+    {% include blog-topbar.html %}
+
+    <div class="container sections-wrapper">
+	    <div class="row">
+	        <div class="primary col-md-12 col-sm-12 col-xs-12">
+				<section class="about section">
+				    <div class="section-inner">
+						<div class="page">
+							{{ content }}
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+    {% include footer.html %}
+</div>
+
+</body>
+</html>
