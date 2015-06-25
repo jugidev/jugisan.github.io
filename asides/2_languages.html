@@ -5,34 +5,24 @@ title: Languages
 ---
 
 <aside class="languages aside section">
-  <div class="section-inner">
-    <h2 class="heading">Languages</h2>
-    <div class="content">
-      <ul class="list-unstyled">
-        <li class="item">
-          <span class="title">
-            <strong>German:</strong>
-          </span>
-          <span class="level">Native Speaker
-            <br class="visible-xs" /><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
-        </li>
-        <li class="item">
-          <span class="title">
-            <strong>English:</strong>
-          </span>
-          <span class="level">Professional Proficiency
-            <br class="visible-sm visible-xs" /><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i>
-          </span>
-        </li>
-        <li class="item">
-          <span class="title">
-            <strong>Japanese:</strong>
-          </span>
-          <span class="level">Elementary Proficiency
-            <br class="visible-sm visible-xs" /><i class="fa fa-star"></i> </i>
-          </span>
-        </li>
-      </ul>
-    </div>
+  <h3 class="title with-icon"><span class="fa fa-globe cat-title"></span> Language Skills</h3>
+  <div class="grid-block">
+    {% if site.author.languages %}
+        <div class="languages">
+            <ul class="list-unstyled list-strip">
+                {% for language in site.author.languages %}
+                    {% if language.name %}
+                        {% if language.proficiency %}
+                            <li>
+                                <i class="fa fa-check-circle-o"></i> <span class="badge badge-green badge-right-float">{{ language.proficiency }}</span>{{ language.name }}
+                            </li>
+                            <div class="deviterTable"></div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
   </div>
 </aside>
+<div class="deviter"></div>

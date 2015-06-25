@@ -1,4 +1,4 @@
-/*   
+/*
  * Template Name: Developer - Responsive Website Template for Developers
  * Version: 1.0
  * Author: 3rd Wave Media
@@ -155,7 +155,7 @@ iframe {
   text-align: center;
 }
 .header .profile-content .social a:hover {
-  background: #778492;
+  background: rgb(102, 203, 140);
 }
 .header .profile-content .social a .fa {
   font-size: 20px;
@@ -358,7 +358,7 @@ iframe {
   margin-bottom: 10;
 }
 .skills .skillset .level-title .level-label {
-  color: #ccd1d6;
+  color: #aaaaaa;
   font-size: 14px;
   font-weight: 400;
   font-family: "Lato", arial, sans-serif;
@@ -372,8 +372,30 @@ iframe {
 }
 .skills .skillset .level-bar-inner {
   height: 15px;
-  background: #66cb8c;
+  background: rgb(102, 203, 140);
 }
+.skills .skillset .level-bar-inner span {
+    position: relative;
+    bottom: -15px;
+    font-size: 10px;
+    color: white;
+    right: -13px;
+    display: inline-block;
+    background: #D84E4E;
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+.skills .skillset .level-bar-inner span:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: -5px;
+    border-bottom: 5px solid #D84E4E;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
 /* Testimonials section */
 .testimonials .item {
   margin-bottom: 30px;

@@ -5,27 +5,48 @@ title: Work Experience
 ---
 
 <section class="experience section">
-  <div class="section-inner">
-    <h2 class="heading">Work Experience</h2>
-    <div class="content">
-      <div class="item">
-        <h3 class="title">Software Developer -
-          <span class="place"><a href="https://www.infotech.de/">Infotech GmbH</a>
-          </span>
-          <span class="year">(2014 - Present)</span>
-        </h3>
-        <p></p>
-      </div>
-      <div class="item">
-        <h3 class="title">Research Assistant -
-          <span class="place"><a href="http://www.uni-koblenz-landau.de/de/koblenz/fb4/icv/agpaulus">AGAS - University of Koblenz</a>
-          </span>
-          <span class="year">(2012 - 2013)</span>
-        </h3>
-        <p><i>Skills used:</i> C++, OpenGL, wxWidgets, svn</p>
-        <p><i>Role Overview:</i> Projectplanning and GUI-Programming</p>
-        <!-- todo: formulate more -->
-      </div>
-    </div>
+  <h3 class="title with-icon"><span class="glyphicon glyphicon-briefcase cat-title"></span>Work Experience</h3>
+  <div class="grid-block">
+      {% if site.author.work_history %}
+          <ul class="timeline">
+              {% for work in site.author.work_history %}
+                  <li class="timeline-inverted">
+                      {% if work.started %}
+                          <div class="timeline-badge info">{{ work.started }}</div>
+                      {% endif %}
+                      <div class="timeline-panel grid-block">
+                          <div class="timeline-heading">
+                              {% if work.company %}
+                                  <h4 class="timeline-title"><a href="{{ work.link }}">{{ work.company }}</a> </h4>
+                              {% endif %}
+                              <p>
+                                  <small class="text-muted">
+                                      {% if work.title %}
+                                          {{ work.title }}
+                                      {% endif %}
+                                  </small>
+                              </p>
+                              <p>
+                                  <small class="text-muted">
+                                      {% if work.duration %}
+                                          <i class="fa fa-calendar"></i> {{ work.duration }} |
+                                      {% endif %}
+                                      {% if work.location %}
+                                          <i class="fa fa-map-marker"></i>  {{ work.location }}
+                                      {% endif %}
+                                  </small>
+                              </p>
+                          </div>
+                          <div class="timeline-body">
+                              {% if work.description %}
+                                  <p>{{ work.description }}</p>
+                              {% endif %}
+                          </div>
+                      </div>
+                  </li>
+              {% endfor %}
+          </ul>
+      {% endif %}
   </div>
 </section>
+<div class="deviter"></div>

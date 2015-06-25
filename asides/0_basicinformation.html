@@ -4,25 +4,24 @@ type: secondarysection
 title: Basic Information
 ---
 
-<aside class="info aside section">
-  <div class="section-inner">
-    <h2 class="heading sr-only">Basic Information</h2>
-    <div class="content">
-      <ul class="list-unstyled">
-        <li><i class="fa fa-birthday-cake"></i>
-          <span class="sr-only">Age:</span>20.05.1988</li>
-        <li><i class="fa fa-map-marker"></i>
-          <span class="sr-only">Location:</span>Dinslaken, Germany</li>
-        <li><i class="fa fa-envelope-o"></i>
-          <span class="sr-only">Email:</span>julian.giesen[at]posteo.de
-        </li>
-        <li><i class="fa fa-link"></i>
-          <span class="sr-only">Website:</span><a href="{{ site.baseurl }}">www.juliangiesen.de</a>
-        </li>
-        <li><i class="fa fa-pencil-square-o"></i>
-          <span class="sr-only">Blog:</span><a href="{{ site.baseurl }}blog">my little blog</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+<aside class="basic aside section">
+<h3 class="title with-icon"><span class="fa fa-info cat-title"></span>Basic Information</h3>
+<div class="grid-block">
+  <ul class="list-unstyled list-strip">
+    <li><i class="fa fa-birthday-cake"></i>
+      <span style="padding-left:10px;"></span>{{site.author.age}}</li>
+    <li><i class="fa fa-map-marker"></i>
+      <span style="padding-left:10px"></span>{{site.author.address}}</li>
+    <li><i class="fa fa-envelope-o"></i>
+      <span style="padding-left:10px"></span>{{site.author.email}}
+    </li>
+    <li><i class="fa fa-link"></i>
+      <span style="padding-left:10px"></span><a href="{{ site.baseurl }}">{{site.author.link}}</a>
+    </li>
+    <li><i class="fa fa-pencil-square-o"></i>
+      <span style="padding-left:10px"></span><a href="{{ site.baseurl }}blog">my little blog</a>
+    </li>
+  </ul>
+</div>
 </aside>
+<div class="deviter"></div>

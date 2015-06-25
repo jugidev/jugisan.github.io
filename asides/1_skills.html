@@ -5,59 +5,31 @@ title: Skills
 ---
 
 <aside class="skills aside section">
-  <div class="section-inner">
-    <h2 class="heading">Skills</h2>
-    <div class="skillset">
-      <h5><i>Static typed languages</i></h5>
-      <div class="item">
-        <h3 class="level-title">C++
-          <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I have worked with this language or technologie and I am comfortable with it.">Working Knowledge</span>
-        </h3>
-        <div class="level-bar">
-          <div class="level-bar-inner" data-level="85%">
-          </div>
+  <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Programming Skills</h3>
+  <div class="grid-block">
+    {% if site.author.programming_skills %}
+        <div class="skillset">
+            <ul class="list-unstyled list-skills">
+                {% for programmingSkill in site.author.programming_skills %}
+                    <li>
+                        {% if programmingSkill.name %}
+                        <div class="item">
+                        <h5 class="level-title">{{ programmingSkill.name }}
+                          <span class="level-label" data-toggle="tooltip" data-placement="right" data-animation="true" title="{{programmingSkill.experience_description}}">{{programmingSkill.experience}}</span>
+                        </h5>
+                        {% endif %}
+                        {% if programmingSkill.percentage %}
+                        <div class="level-bar">
+                          <div class="level-bar-inner" data-level="{{ programmingSkill.percentage }}" data-toggle="tooltip" data-animation="true" data-placement="bottom" title="{{ programmingSkill.percentage }}">
+                          </div>
+                        </div>
+                        {% endif %}
+                      </div>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
-      </div>
-      <div class="item">
-        <h3 class="level-title">C#
-          <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I have worked with this language or technologie and I am comfortable with it.">Working Knowledge</span>
-        </h3>
-        <div class="level-bar">
-          <div class="level-bar-inner" data-level="60%">
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <h3 class="level-title">Java
-          <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I have played with this language or technologie and I have a basic understanding of its purpose.">Basic Knowledge</span>
-        </h3>
-        <div class="level-bar">
-          <div class="level-bar-inner" data-level="60%">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="skillset">
-      <h5><i>Dynamically typed languages</i></h5>
-      <div class="item">
-        <h3 class="level-title"><a href="https://github.com/okamstudio/godot/wiki/gdscript">GDScript</a>
-          <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I have played with this language or technologie and I have a basic understanding of its purpose.">Basic Knowledge</span>
-        </h3>
-        <div class="level-bar">
-          <div class="level-bar-inner" data-level="90%">
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <h3 class="level-title">Python
-          <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I have played with this language or technologie and I have a basic understanding of its purpose.">Basic Knowledge</span>
-        </h3>
-        <div class="level-bar">
-          <div class="level-bar-inner" data-level="60%">
-          </div>
-        </div>
-      </div>
-      
-    </div>
+    {% endif %}
   </div>
 </aside>
+<div class="deviter"></div>
