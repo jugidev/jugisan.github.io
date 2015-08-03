@@ -33,14 +33,22 @@ author:
     linkedin: https://de.linkedin.com/in/juliangiesen
     work_history:
       - work1:
+        company: Julian Giesen
+        link: https://www.juliangiesen.de/
+        location: Dinslaken, Germany
+        title: Freelancer - Android Developer
+        started: 2015
+        duration: (2014 - 2015)
+        description:
+      - work2:
         company: Infotech GmbH
         link: https://www.infotech.de/
         location: Recklinghausen, Germany
         title: Software Developer
         started: 2014
         duration: (2014 - 2015)
-        description:
-      - work2:
+        description: C++ Schnittstellenprogrammierung für den Zahlungsverkehr
+      - work3:
         company: AGAS - University of Koblenz
         link: http://www.uni-koblenz-landau.de/de/koblenz/fb4/icv/agpaulus
         location: Koblenz, Germany
