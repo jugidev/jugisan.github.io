@@ -1,6 +1,6 @@
 _site/
 node_modules/
+.sass-cache
 
 npm-debug.log
 /.project
-/Gulpfile_kleiner-racker_Jun-08-161356-2015_Conflict.js
