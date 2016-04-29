@@ -1,115 +1,20 @@
-timezone: Europe/Berlin
-highlighter: pygments
-markdown: redcarpet
-paginate: 15
-
-# Permalinks
-permalink: pretty
-relative_permalinks: true
-
-exclude: [README.md, LICENSE, node_modules, npm-debug.log, Gulpfile.js, package.json]
-
-# setup
+# Site settings
 title: www.juliangiesen.de
-url: http://www.juliangiesen.de
-description: Portfolio website of Julian Giesen
-copyright: 2015
+email: info@juliangiesen.de
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+copyright: 2016
 baseurl: /
 
-github:
-  repo: https://github.com/rikushan/rikushan.github.io
+name: Julian Giesen
 
-# comment
-author:
-    name: Julian Giesen
-    title: Software Developer
-    address: Dinslaken, Germany
-    age: 20.05.1988
-    email: julian.giesen[at]posteo.de
-    link: www.juliangiesen.de
-    googleplus: https://plus.google.com/+JulianGiesen
-    github: https://github.com/rikushan
-    xing: https://www.xing.com/profile/Julian_Giesen2
-    linkedin: https://de.linkedin.com/in/juliangiesen
-    work_history:
-      - work1:
-        company: Julian Giesen
-        link: https://www.juliangiesen.de/
-        location: Dinslaken, Germany
-        title: Freelancer - Android Developer
-        started: 2015
-        duration: (2014 - 2015)
-        description:
-      - work2:
-        company: Infotech GmbH
-        link: https://www.infotech.de/
-        location: Recklinghausen, Germany
-        title: Software Developer
-        started: 2014
-        duration: (2014 - 2015)
-        description: C++ Schnittstellenprogrammierung für den Zahlungsverkehr
-      - work3:
-        company: AGAS - University of Koblenz
-        link: http://www.uni-koblenz-landau.de/de/koblenz/fb4/icv/agpaulus
-        location: Koblenz, Germany
-        title: Research Assistant
-        started: 2012
-        duration: (2012 - 2013)
-        description: Projectplanning and GUI-Programming using C++, OpenGL and wxWidgets.
-    education_history:
-      - education1:
-        organization: University of Koblenz
-        degree: Master of Science
-        major: Computervisualistics
-        started: 2011
-        duration: (2011 - 2014)
-        description:
-      - education2:
-        organization: University of Koblenz
-        degree: Bachelor of Science
-        major: Computervisualistics
-        started: 2007
-        duration: (2007 - 2011)
-        description:
-    languages:
-      - language1:
-        name: German
-        proficiency: Native
-      - language2:
-        name: English
-        proficiency: Professional
-      - language3:
-        name: Japanese
-        proficiency: Elementary
-    programming_skills:
-      - skill1:
-        name: C++
-        percentage: 85%
-        experience: Working Knowledge
-        experience_description: I have worked with this language or technologie and I am comfortable with it.
-      - skill2:
-        name: C#
-        percentage: 60%
-        experience: Working Knowledge
-        experience_description: I have worked with this language or technologie and I am comfortable with it.
-      - skill3:
-        name: Java
-        percentage: 60%
-        experience: Basic Knowledge
-        experience_description: I have played with this language or technologie and I have a basic understanding of its purpose.
-      - skill4:
-        name: GDScript
-        percentage: 80%
-        experience: Basic Knowledge
-        experience_description: I have played with this language or technologie and I have a basic understanding of its purpose.
-      - skill5:
-        name: Python
-        percentage: 60%
-        experience: Basic Knowledge
-        experience_description: I have played with this language or technologie and I have a basic understanding of its purpose.
-    publications:
-      - pub1:
-        title: Enhancing Human-Robot Interaction by a Robot Face with Facial Expressions and Synchronized Lip Movements
-        authors: Seib, Viktor; Giesen, Julian; Grüntjens, Dominik; Paulus, Dietrich
-        year: 2013
-        conference: In Skala, Vaclav; Proceedings of the 21st International Conference in Central Europe on Computer Graphics, Visualization and Computer Vision.
+twitter_username: jugisan
+github_username: jugisan
+xing_name: Julian_Giesen2
+linkedin_name: juliangiesen
+
+# Build settings
+timezone: Europe/Berlin
+highlighter: rogue
+markdown: kramdown
