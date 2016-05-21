@@ -7,10 +7,44 @@
                 <p> Wenn Sie daran Interesse haben, Ihr nächstes Projekt mit mir zu starten oder
                   mir einfach eine nette Nachricht hinterlassen wollen, dann treten Sie doch gerne mit mir in Kontakt.
                 </p>
-                <p> Sie können mir eine E-Mail schreiben oder mich über eines der angegebenen Netzwerke erreichen. </p>
+                <p> Nutzen Sie für eine Kontaktaufnahme einfach das dafür vorgesehene Formular
+                  oder kontaktieren Sie mich über eines der angegebenen Netzwerke. </p>
 
                 <p> Ich werde Ihnen schnellstmöglich antworten.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+
+                  <br>
+                  <form action="https://formspree.io/{{ site.email }}" method="POST">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <div class="control-group form-group">
+                                    <input type="text" class="form-control" placeholder="Name *" id="name" required data-validation-required-message="Bitte geben Sie Ihren Namen oder Firmennamen an.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group form-group">
+                                    <input type="email" class="form-control" placeholder="E-Mail *" id="email" required data-validation-required-message="Bitte geben Sie Ihre E-Mail Adresse an.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group form-group">
+                                    <textarea rows="7" class="form-control" placeholder="Nachricht *" id="message" required data-validation-required-message="Bitte geben Sie eine Nachticht ein."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-primary btn-xl page-scroll">Senden</button>
+                            </div>
+                        </div>
+                        <input type="hidden" name="_next" value="{{ site.baseurl }}/danke.html" />
+                        <input type="hidden" name="_subject" value="Kontaktanfrage" />
+                    </form>
+                  <br>
                 <br>
+                </div>
             </div>
         <!--<div class="col-lg-2 col-lg-offset-2 text-center">
             <a href="https://twitter.com/{{ site.twitter_username }}">
@@ -38,6 +72,5 @@
             <i class="fa fa-linkedin fa-3x wow bounceIn" data-wow-delay=".1s"></i>
             </a>
         </div>
-
     </div>
 </section>
