@@ -16,5 +16,5 @@ linkedin_name: juliangiesen
 
 # Build settings
 timezone: Europe/Berlin
-highlighter: rogue
+highlighter: rouge
 markdown: kramdown
