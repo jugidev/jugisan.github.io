@@ -2,13 +2,16 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Ich freue mich über neue Kontakte</h2>
+                <h2 class="section-heading">Ich freue mich über neue Kontakte!</h2>
                 <hr class="primary">
-                <p> Wenn Sie daran Interesse haben, Ihr nächstes Projekt mit mir zu starten oder
-                  mir einfach eine nette Nachricht hinterlassen wollen, dann treten Sie doch gerne mit mir in Kontakt.
+                <p>
+                    Wenn Sie Interesse haben, Ihr nächstes Projekt mit mir zu starten oder mir einfach eine nette Nachricht hinterlassen wollen, dann treten Sie doch gerne mit mir in Kontakt.
                 </p>
-                <p> Nutzen Sie für eine Kontaktaufnahme einfach das dafür vorgesehene Formular
-                  oder kontaktieren Sie mich über eines der angegebenen Netzwerke. </p>
+                <p>
+                    Nutzen Sie für eine Kontaktaufnahme einfach das dafür vorgesehene Formular und ich senden Ihnen mein Portfolio als PDF mit zusätzlichen Kontaktdaten zu.
+                </p>
+
+                <p> Sie erreichen mich natürlich auch über eines der angegebenen Netzwerke. </p>
 
                 <p> Ich werde Ihnen schnellstmöglich antworten.</p>
             </div>
@@ -16,15 +19,17 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
 
-                  <br>
-                  <form action="https://formspree.io/{{ site.email }}" method="POST">
+                    <br>
+                    <form action="https://formspree.io/{{ site.email }}" method="POST">
                         <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <div class="control-group form-group">
+                            <div class="col-lg-12 text-center ">
+                                <div class="control-group form-group input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
                                     <input type="text" name="name" class="form-control" placeholder="Name *" id="name" required data-validation-required-message="Bitte geben Sie Ihren Namen oder Firmennamen an.">
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                <div class="control-group form-group">
+                                <div class="control-group form-group input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
                                     <input type="email" name="_replyto" class="form-control" placeholder="E-Mail *" id="email" required data-validation-required-message="Bitte geben Sie Ihre E-Mail Adresse an.">
                                     <p class="help-block text-danger"></p>
                                 </div>
@@ -33,44 +38,59 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="row">
                             <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
+                            <div class="col-lg-0 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-primary btn-xl page-scroll">Senden</button>
+                                <button type="submit" class="btn btn-primary btn-xl page-scroll">Kontakt aufnehmen</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <br>
+                                <h3>Nutzen Sie die Vorteile des Kontaktformulars</h3>
+                                <ul class="list-group">
+                                    <li class="list-group-item text-left">
+                                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Portfolio als PDF
+                                    </li>
+                                    <li class="list-group-item text-left">
+                                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Zusätzliche Kontaktdaten
+                                    </li>
+                                    <li class="list-group-item text-left">
+                                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Schnellerer telefonischer Kontakt
+                                    </li>
+                                </ul>
+                                <br>
                             </div>
                         </div>
                         <input type="hidden" name="_next" value="{{ site.baseurl }}danke/" />
                         <input type="hidden" name="_subject" value="Kontaktanfrage" />
                     </form>
-                  <br>
-                <br>
+                    <br>
+                    <br>
                 </div>
             </div>
-        <!--<div class="col-lg-2 col-lg-offset-2 text-center">
-            <a href="https://twitter.com/{{ site.twitter_username }}">
-                <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p>{{ site.twitter_username }}</p>
-            </a>
-        </div> -->
-        <div class="col-xs-3 text-center">
-            <a href="mailto:{{ site.email }}">
-            <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-            </a>
+            <div class="col-xs-3 text-center">
+                <a href="mailto:{{ site.email }}">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                </a>
+            </div>
+            <div class="col-xs-3 text-center">
+                <a href="https://github.com/{{ site.github_username }}">
+                    <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                </a>
+            </div>
+            <div class="col-xs-3 text-center">
+                <a href="https://www.xing.com/profile/{{ site.xing_name }}">
+                    <i class="fa fa-xing fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                </a>
+            </div>
+            <div class="col-xs-3 text-center">
+                <a href="https://www.linkedin.com/in/{{ site.linkedin_name }}">
+                    <i class="fa fa-linkedin fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                </a>
+            </div>
         </div>
-        <div class="col-xs-3 text-center">
-            <a href="https://github.com/{{ site.github_username }}">
-            <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-            </a>
-        </div>
-        <div class="col-xs-3 text-center">
-            <a href="https://www.xing.com/profile/{{ site.xing_name }}">
-            <i class="fa fa-xing fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-            </a>
-        </div>
-        <div class="col-xs-3 text-center">
-            <a href="https://www.linkedin.com/in/{{ site.linkedin_name }}">
-            <i class="fa fa-linkedin fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-            </a>
-        </div>
-    </div>
 </section>
