@@ -1,34 +1,28 @@
-
-html,
-body {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
 }
-
 body {
     @include serif-font;
 }
-
 hr {
     border-color: $theme-primary;
     border-width: 3px;
     max-width: 50px;
 }
-
 hr.light {
     border-color: white;
 }
-
 a {
     @include transition-all;
     color: $theme-primary;
-    &:hover,
-    &:focus {
+    &:focus,
+    &:hover {
         color: darken($theme-primary, 10%);
     }
 }
-
 h1,
 h2,
 h3,
@@ -37,47 +31,37 @@ h5,
 h6 {
     @include sans-serif-font;
 }
-
 p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
-
 .bg-primary {
     background-color: $theme-primary;
 }
-
 .bg-dark {
     background-color: $theme-dark;
     color: white;
 }
-
 .bg-image {
     @include background-cover;
     background-position: center;
     background-image: url('../img/header.jpg');
     background-color: $theme-primary;
 }
-
 .text-faded {
     color: rgba(white, .7);
 }
-
 section {
     padding: 100px 0;
 }
-
 aside {
     padding: 50px 0;
 }
-
 .no-padding {
     padding: 0;
 }
-
 // Navigation
-
 .navbar-default {
     background-color: white;
     border-color: rgba($theme-dark, .5);
@@ -88,15 +72,15 @@ aside {
         @include sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
-        &:hover,
-        &:focus {
+        &:focus,
+        &:hover {
             color: darken($theme-primary, 10%);
         }
     }
     .nav {
         > li {
-            > a,
-            > a:focus {
+             > a:focus,
+            > a {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
@@ -106,8 +90,8 @@ aside {
                 }
             }
             &.active {
-                > a,
-                > a:focus {
+                 > a:focus,
+                > a {
                     color: $theme-primary !important;
                     background-color: transparent;
                     &:hover {
@@ -122,8 +106,8 @@ aside {
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
-            &:hover,
-            &:focus {
+            &:focus,
+            &:hover {
                 color: white;
             }
         }
@@ -140,8 +124,8 @@ aside {
             .navbar-header .navbar-brand {
                 color: $theme-primary;
                 font-size: 14px;
-                &:hover,
-                &:focus {
+                &:focus,
+                &:hover {
                     color: darken($theme-primary, 10%);
                 }
             }
@@ -155,9 +139,7 @@ aside {
         }
     }
 }
-
 // Homepage Header
-
 header {
     position: relative;
     width: 100%;
@@ -170,7 +152,7 @@ header {
     .header-content {
         position: relative;
         text-align: center;
-        padding: 100px 15px 100px;
+        padding: 100px 15px;
         width: 100%;
         .header-content-inner {
             h1 {
@@ -213,13 +195,10 @@ header {
         }
     }
 }
-
 // Sections
-
 .section-heading {
     margin-top: 0;
 }
-
 .service-box {
     max-width: 400px;
     margin: 50px auto 0;
@@ -230,7 +209,6 @@ header {
         margin-bottom: 0;
     }
 }
-
 .portfolio-box {
     position: relative;
     display: block;
@@ -286,32 +264,26 @@ header {
         }
     }
 }
-
 .call-to-action {
     h2 {
         margin: 0 auto 20px;
     }
 }
-
 // Bootstrap Overrides
 .text-primary {
     color: $theme-primary;
 }
-
 .no-gutter > [class*='col-'] {
-    padding-right:0;
-    padding-left:0;
+    padding-right: 0;
+    padding-left: 0;
 }
-
 // Button Styles
 .btn-default {
     @include button-variant($theme-dark, white, white);
 }
-
 .btn-primary {
     @include button-variant(white, $theme-primary, $theme-primary);
 }
-
 .btn {
     @include sans-serif-font;
     border: none;
@@ -319,17 +291,14 @@ header {
     font-weight: 700;
     text-transform: uppercase;
 }
-
 .btn-xl {
     padding: 15px 30px;
 }
-
 // Contact
 #contact .fa {
     color: $theme-dark;
     font-size: 4em;
 }
-
 // Extras
 // -- Highlight Color Customization
 ::-moz-selection {
@@ -337,53 +306,47 @@ header {
     text-shadow: none;
     background: $theme-dark;
 }
-
 ::selection {
     color: white;
     text-shadow: none;
     background: $theme-dark;
 }
-
 img::selection {
     color: white;
     background: transparent;
 }
-
 img::-moz-selection {
     color: white;
     background: transparent;
 }
-
 body {
     -webkit-tap-highlight-color: $theme-dark;
 }
-
 .form-control:focus {
-  border-color: $theme-primary;
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px darken($theme-primary, 10%);
-          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px darken($theme-primary, 10%);
+    border-color: $theme-primary;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px darken($theme-primary, 10%);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px darken($theme-primary, 10%);
 }
-
 #container {
-  position: relative;
-  padding-bottom: 6rem;
-  min-height: 100%;
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 100%;
 }
 #body {
-  padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 #footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
-
 body:before {
-  content:"";
-  height:100%;
-  float:left;
-  width:0;
-  margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+    /* thank you Erik J - negate effect of float*/
 }

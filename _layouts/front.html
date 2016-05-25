@@ -4,20 +4,18 @@
 {% include head.html %}
 
 <body id="page-top">
-  {% include nav.html %}
-  {% include header.html %}
-  <div id="container">
-    <div id="body">
-      {% include services.html %}
-      {% include contact.html %}
-        <!--{% include portfolio.html %}-->
-        <!--{% include aside.html %}-->
+    {% include nav.html %} {% include header.html %}
+    <div id="container">
+        <div id="body">
+            {% include services.html %} {% include contact.html %}
+            <!--{% include portfolio.html %}-->
+            <!--{% include aside.html %}-->
+        </div>
+        <div id="footer">
+            {% include footer.html %}
+        </div>
     </div>
-    <div id="footer">
-    {% include footer.html %}
-    </div>
-</div>
-  {% include scripts.html %}
+    {% include scripts.html %}
 </body>
 
 </html>
